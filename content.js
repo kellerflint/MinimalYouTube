@@ -1,8 +1,6 @@
 const removeElements = () => {
     let items = document.getElementsByClassName("ytd-rich-grid-renderer");
 
-    console.log("test")
-
     for (let i = 0; i < items.length; i++) {
         items[i].remove();
     }
