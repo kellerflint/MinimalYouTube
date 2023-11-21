@@ -10,6 +10,11 @@ const removeElements = () => {
     for (let i = 0; i < items.length; i++) {
         items[i].remove();
     }
+    
+    const shortsContainer = document.getElementById("shorts-inner-container");
+    if (shortsContainer) {
+      shortsContainer.remove();
+    }
 }
 
 removeElements();
