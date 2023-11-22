@@ -1,6 +1,4 @@
 const removeElements = () => {
-    console.log('ran remove');
-
     const homeContainer = document.getElementsByTagName(
         'ytd-two-column-browse-results-renderer'
     )[0];
@@ -9,7 +7,7 @@ const removeElements = () => {
         homeContainer.remove();
     }
 
-    let items = document.getElementsByTagName(
+    const items = document.getElementsByTagName(
         'ytd-watch-next-secondary-results-renderer'
     );
 
@@ -23,7 +21,6 @@ const removeElements = () => {
     }
 
     const videos = document.getElementsByClassName('ytd-shorts');
-
     for (let i = 0; i < videos.length; i++) {
         videos[i].remove();
     }
