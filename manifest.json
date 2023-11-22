@@ -2,7 +2,7 @@
     "name": "Minimal YouTube",
     "version": "1.0.1",
     "manifest_version": 2,
-    "description": "This extension removes recommended videos from the YouTube home page and the side bar to help you stay focused and distraction free.",
+    "description": "This extension removes recommended videos from the YouTube home page, side bar and shorts to help you stay focused and distraction free.",
     "author": "Keller Flint",
     "icons": {
         "128": "icons/MinimalYouTubeLogo.png"
