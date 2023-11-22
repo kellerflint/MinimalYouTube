@@ -3,10 +3,10 @@ const removeElements = () => {
 
     const homeContainer = document.getElementsByTagName(
         'ytd-two-column-browse-results-renderer'
-    );
+    )[0];
 
-    if (homeContainer[0]) {
-        homeContainer[0].remove();
+    if (homeContainer) {
+        homeContainer.remove();
     }
 
     let items = document.getElementsByTagName(
@@ -17,9 +17,15 @@ const removeElements = () => {
         items[i].remove();
     }
 
-    const shortsContainer = document.getElementById('shorts-inner-container');
+    const shortsContainer = document.getElementById('shorts-container');
     if (shortsContainer) {
         shortsContainer.remove();
+    }
+
+    const videos = document.getElementsByClassName('ytd-shorts');
+
+    for (let i = 0; i < videos.length; i++) {
+        videos[i].remove();
     }
 };
 
