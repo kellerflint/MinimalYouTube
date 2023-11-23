@@ -9,12 +9,12 @@ const removeElements = () => {
     }
 
     // Remove sidebar recommendations
-    const items = document.getElementsByTagName(
+    const sidebarVideos = document.getElementsByTagName(
         'ytd-watch-next-secondary-results-renderer'
     );
 
-    for (let i = 0; i < items.length; i++) {
-        items[i].remove();
+    for (let i = 0; i < sidebarVideos.length; i++) {
+        sidebarVideos[i].remove();
     }
 
     // Remove shorts
@@ -23,9 +23,9 @@ const removeElements = () => {
         shortsContainer.remove();
     }
 
-    const videos = document.getElementsByClassName('ytd-shorts');
-    for (let i = 0; i < videos.length; i++) {
-        videos[i].remove();
+    const shortVideos = document.getElementsByClassName('ytd-shorts');
+    for (let i = 0; i < shortVideos.length; i++) {
+        shortVideos[i].remove();
     }
 };
 
