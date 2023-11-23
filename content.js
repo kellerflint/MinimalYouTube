@@ -1,4 +1,5 @@
 const removeElements = () => {
+    // Remove home page recommendations
     const homeContainer = document.getElementsByTagName(
         'ytd-two-column-browse-results-renderer'
     )[0];
@@ -7,6 +8,7 @@ const removeElements = () => {
         homeContainer.remove();
     }
 
+    // Remove sidebar recommendations
     const items = document.getElementsByTagName(
         'ytd-watch-next-secondary-results-renderer'
     );
@@ -15,6 +17,7 @@ const removeElements = () => {
         items[i].remove();
     }
 
+    // Remove shorts
     const shortsContainer = document.getElementById('shorts-container');
     if (shortsContainer) {
         shortsContainer.remove();
